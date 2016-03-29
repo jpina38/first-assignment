@@ -1,4 +1,10 @@
-.buttons{
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Calculator</title>
+<style type="text/css">
+
+#buttons{
 	height:50px;
 	width: 70px;
 }
@@ -12,3 +18,52 @@
 #o{
 	height:50px;
 	width:145px;
+
+}
+</style>
+</head>
+<body>
+	<form name="calculator">
+	<table border="1" width="100" align="center">
+	<tr>
+		<td colspan="4"><input type="text" name="solution" id="solution"></td>
+		
+	</tr>
+	
+	<tr>
+		<td><input type="button" value="AC" id="buttons"></td>
+		<td><input type="button" value="+/-" id="buttons"></td>
+		<td><input type="button" value="%" id="buttons"></td>
+		<td><input type="button" value="/" id="buttons"></td>
+	</tr>
+
+	<tr>
+		<td><input type="button" value="1" id="buttons"></td>
+		<td><input type="button" value="2" id="buttons"></td>
+		<td><input type="button" value="3" id="buttons"></td>
+		<td><input type="button" value="x" id="buttons"></td>
+	</tr>
+
+	<tr>
+		<td><input type="button" value="4" id="buttons"></td>
+		<td><input type="button" value="5" id="buttons"></td>
+		<td><input type="button" value="6" id="buttons"></td>
+		<td><input type="button" value="+" id="buttons"></td>
+	</tr>
+
+	<tr>
+		<td><input type="button" value="7" id="buttons"></td>
+		<td><input type="button" value="8" id="buttons"></td>
+		<td><input type="button" value="9" id="buttons"></td>
+		<td><input type="button" value="-" id="buttons"></td>
+	</tr>
+
+	<tr>
+		<td colspan="2"><input type="button" value="0" id="o"></td>
+		<td><input type="button" value="." id="buttons"></td>
+		<td><input type="button" value="=" id="buttons"></td>
+	</tr>
+	</form>
+	</table>
+</body>
+</html>
