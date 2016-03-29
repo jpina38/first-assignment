@@ -2,25 +2,7 @@
 <html>
 <head>
 <title>HTML Calculator</title>
-<style type="text/css">
-
-#buttons{
-	height:50px;
-	width: 70px;
-}
-
-#solution{
-	height:40px;
-	width:250px;
-	border:none;
-	font-size:24px;
-}
-#o{
-	height:50px;
-	width:145px;
-
-}
-</style>
+<link rel="stylesheet" type="text/css" href="calculator_2.css">
 </head>
 <body>
 	<form name="calculator">
@@ -31,37 +13,37 @@
 	</tr>
 	
 	<tr>
-		<td><input type="button" value="AC" id="buttons"></td>
-		<td><input type="button" value="+/-" id="buttons"></td>
-		<td><input type="button" value="%" id="buttons"></td>
-		<td><input type="button" value="/" id="buttons"></td>
+		<td><input type="button" value="AC" class="buttons" onClick="solution.value=''"></td>
+		<td><input type="button" value="+/-" class="buttons"></td>
+		<td><input type="button" value="%" class="buttons"></td>
+		<td><input type="button" value="/" class="buttons" onClick="solution.value+='/'"></td>
 	</tr>
 
 	<tr>
-		<td><input type="button" value="1" id="buttons"></td>
-		<td><input type="button" value="2" id="buttons"></td>
-		<td><input type="button" value="3" id="buttons"></td>
-		<td><input type="button" value="x" id="buttons"></td>
+		<td><input type="button" value="1" class="buttons" onClick="solution.value+='1'"></td>
+		<td><input type="button" value="2" class="buttons" onClick="solution.value+='2'"></td>
+		<td><input type="button" value="3" class="buttons" onClick="solution.value+='3'"></td>
+		<td><input type="button" value="x" class="buttons" onClick="solution.value+='*'"></td>
 	</tr>
 
 	<tr>
-		<td><input type="button" value="4" id="buttons"></td>
-		<td><input type="button" value="5" id="buttons"></td>
-		<td><input type="button" value="6" id="buttons"></td>
-		<td><input type="button" value="+" id="buttons"></td>
+		<td><input type="button" value="4" class="buttons" onClick="solution.value+='4'"></td>
+		<td><input type="button" value="5" class="buttons" onClick="solution.value+='5'"></td>
+		<td><input type="button" value="6" class="buttons" onClick="solution.value+='6'"></td>
+		<td><input type="button" value="+" class="buttons" onClick="solution.value+='+'"></td>
 	</tr>
 
 	<tr>
-		<td><input type="button" value="7" id="buttons"></td>
-		<td><input type="button" value="8" id="buttons"></td>
-		<td><input type="button" value="9" id="buttons"></td>
-		<td><input type="button" value="-" id="buttons"></td>
+		<td><input type="button" value="7" class="buttons" onClick="solution.value+='7'"></td>
+		<td><input type="button" value="8" class="buttons" onClick="solution.value+='8'"></td>
+		<td><input type="button" value="9" class="buttons" onClick="solution.value+='9'"></td>
+		<td><input type="button" value="-" class="buttons" onClick="solution.value+='-'"></td>
 	</tr>
 
 	<tr>
-		<td colspan="2"><input type="button" value="0" id="o"></td>
-		<td><input type="button" value="." id="buttons"></td>
-		<td><input type="button" value="=" id="buttons"></td>
+		<td colspan="2"><input type="button" value="0" id="o" onClick="solution.value+='0'"></td>
+		<td><input type="button" value="." class="buttons" onClick="solution.value+='.'"></td>
+		<td><input type="button" value="=" class="buttons"></td>
 	</tr>
 	</form>
 	</table>
